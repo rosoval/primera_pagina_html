@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <style>
+        body{
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .h1{
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-
+<p></p>
 <form action="/"method="get">
     <h1 class="h1">formulario de ingreso</h1>
     
@@ -63,6 +77,8 @@
     <textarea name="mensaje" id="texto"></textarea>
 </label>
 </div>
+<button type="submit">enviar</button>
+<button type="reset">limpiar</button>
 </form>
 </body>
 </html>
