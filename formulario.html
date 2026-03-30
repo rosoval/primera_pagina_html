@@ -21,10 +21,16 @@
     </style>
 </head>
 <body>
-<p></p>
-<form action="/"method="get">
-    <h1 class="h1">formulario de ingreso</h1>
+
+    <p></p>
+
+    <form action="/"method="get">
     
+        <header>
+        <h1 class="h1">formulario de ingreso</h1>
+    </header>
+   
+    <main>
     <div class="container">
         <label for="nombre"></label>
         <p>nombre:</p>
@@ -38,6 +44,8 @@
         <p>email:</p>
         <input type="email" id="email" name="email" required>
     </div>
+</main>
+  <article> 
 <h1>genero:</h1>
     <div class="container">
     <label>
@@ -47,6 +55,9 @@
         <input type="radio"name="genero" value="femenino">femenino
     </label>
 </div>
+</article> 
+
+<section>
 <h1>hobbies:</h1>
     <div class="container">
     <label>
@@ -62,6 +73,10 @@
         <input type="checkbox"name="hobby" value="cocinar">cocinar
     </label>
 </div>
+</section>
+
+<section>
+
 <h1>pais de origen:</h1>
 <div class="container">
 <select name="pais" id="pais">
@@ -71,14 +86,24 @@
     <option value="py">paraguay</option>
 </select>
 </div>
+</section>
+
+<footer>
+
 <h1>mensaje:</h1>
 <div class="container">
     <label for="texto">mensaje:</label>
     <textarea name="mensaje" id="texto"></textarea>
 </label>
 </div>
+
 <button type="submit">enviar</button>
 <button type="reset">limpiar</button>
 </form>
+
+
+    <h3>copyright &copy; 2026</h3>
+</footer>
+
 </body>
 </html>
