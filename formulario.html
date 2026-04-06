@@ -4,106 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
-        .container{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        .h1{
-            color: #333;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-
-    <p></p>
-
-    <form action="/"method="get">
-    
+    <form action="/" method="get">
         <header>
-        <h1 class="h1">formulario de ingreso</h1>
-    </header>
-   
-    <main>
-    <div class="container">
-        <label for="nombre"></label>
-        <p>nombre:</p>
-        <input type="text" id="nombre" name="nombre" required>
-        
-        <label for="contraseña"></label>
-        <p>contraseña:</p>
-        <input type="password" id="contraseña" name="contraseña" required>
-        
-        <label for="email"></label>
-        <p>email:</p>
-        <input type="email" id="email" name="email" required>
-    </div>
-</main>
-  <article> 
-<h1>genero:</h1>
-    <div class="container">
-    <label>
-        <input type="radio"name="genero" value="masculino">masculino
-    </label>
-    <label>
-        <input type="radio"name="genero" value="femenino">femenino
-    </label>
-</div>
-</article> 
+            <h1 class="h1">formulario de ingreso</h1>
+        </header>
 
-<section>
-<h1>hobbies:</h1>
-    <div class="container">
-    <label>
-        <input type="checkbox"name="hobby" value="programar">programar
-    </label>
-    <label>
-        <input type="checkbox"name="hobby" value="dormir">dormir
-    </label>
-    <label>
-        <input type="checkbox"name="hobby" value="viajar">viajar
-    </label>
-    <label >
-        <input type="checkbox"name="hobby" value="cocinar">cocinar
-    </label>
-</div>
-</section>
+        <main>
+            <div class="container">
+                <label for="nombre"></label>
+                <p>nombre:</p>
+                <input type="text" id="nombre" name="nombre" required>
 
-<section>
+                <label for="contraseña"></label>
+                <p>contraseña:</p>
+                <input type="password" id="contraseña" name="contraseña" required>
 
-<h1>pais de origen:</h1>
-<div class="container">
-<select name="pais" id="pais">
-    <option value="uy">uruguay</option>
-    <option value="ar">argentina</option>
-    <option value="br">brasil</option>
-    <option value="py">paraguay</option>
-</select>
-</div>
-</section>
+                <label for="email"></label>
+                <p>email:</p>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </main>
 
-<footer>
+        <section class="genero">
+            <h1>genero:</h1>
+            <div class="container">
+                <label>
+                    <input type="radio" name="genero" value="masculino">masculino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="femenino">femenino
+                </label>
+            </div>
+        </section>
 
-<h1>mensaje:</h1>
-<div class="container">
-    <label for="texto">mensaje:</label>
-    <textarea name="mensaje" id="texto"></textarea>
-</label>
-</div>
+        <section class="hobbies">
+            <h1>hobbies:</h1>
+            <div class="container">
+                <label>
+                    <input type="checkbox" name="hobby" value="programar">programar
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="dormir">dormir
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="viajar">viajar
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="cocinar">cocinar
+                </label>
+            </div>
+        </section>
 
-<button type="submit">enviar</button>
-<button type="reset">limpiar</button>
-</form>
+        <section class="pais">
+            <h1>pais de origen:</h1>
+            <div class="container">
+                <select name="pais" id="pais">
+                    <option value="uy">uruguay</option>
+                    <option value="ar">argentina</option>
+                    <option value="br">brasil</option>
+                    <option value="py">paraguay</option>
+                </select>
+            </div>
+        </section>
 
+        <footer class="mensaje">
+            <h1>mensaje:</h1>
+            <div class="container">
+                <label for="texto">mensaje:</label>
+                <textarea name="mensaje" id="texto"></textarea>
+            </div>
+
+            <button type="submit">enviar</button>
+            <button type="reset">limpiar</button>
+       
+    </form>
 
     <h3>copyright &copy; 2026</h3>
-</footer>
-
+ </footer>
 </body>
 </html>
