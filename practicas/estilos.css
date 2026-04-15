@@ -46,6 +46,7 @@ header a:first-of-type{
 header a{
     margin-left: 10px;
     margin:5px;
+    padding-right: 10px;
            
 }
 
@@ -66,3 +67,19 @@ button{
     margin:5px;
     height: 20px;
 }
+.ima{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.image{
+    width: 30%;
+    padding:20px;
+    margin: 0 auto;
+    border-radius: 100px ;
+}
+.p{
+    text-align: center;
+}
+
